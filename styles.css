@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    font-weight: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+nav a img {
+    width: 100px;
+    height: 70px;
+}
+  
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+.nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 100px;
+  }
+   
+.nav-links li {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+.nav-links a {
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 20px 12px;
+    transition: color 0.3s ease;
+  }
+  
+.nav-links a:hover {
+    color: #2267fe;
+    border-radius: 4px;
+  }
+
+.grid-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: repeat(6, auto); /* 6-row grid */
+    grid-template-columns: repeat(12, 1fr); /* 12-column grid */
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+/* Styles for the header, services, featured products, about us, and contact sections */
+.services, .featured-products, .about-us, .contact {
+    padding: 20px;
+}
+
+/* Define specific row and column for grid items */
+.grid-container div:nth-child(1) {
+    grid-row: 1 / 2;
+    grid-column: 2 / 8; 
+    font-size: 3em;
+    color: #2267fe;
+    margin-bottom: -130px;
+}
+
+.grid-container div:nth-child(2) {
+    grid-row: 1 / 6 ;
+    grid-column: 7 / 10; 
+    margin-top: 70px;
+}
+
+.grid-container div:nth-child(3) {
+    grid-row: 2 / 3; 
+    grid-column: 2 / 7;
+    font-size: 0.9em;
+    font-weight: regular;
+    font-size: 1.5em;
+    margin-bottom: -60px;
+    margin-top: -20px; 
+    letter-spacing: 3px;
+}
+.grid-container div:nth-child(4) {
+    color: #2267fe;
+    grid-row: 3 / 3; 
+    grid-column: 2 / 7;
+    font-size: 0.9em;
+    font-weight: regular;
+    font-size: 1.5em;
+    margin-top: -50px;
+    margin-bottom: -100px;
+    font-weight: 700;
+    font-size: 2em;
+}
+.grid-container div:nth-child(5) {
+    grid-row: 4 / 4; 
+    grid-column: 2 / 7;
+    font-size: 0.9em;
+    font-weight: regular;
+    font-size: 1.5em;
+    margin-top: -70px;
+    margin-bottom: -20px;
+    font-weight: 400;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+}
+.grid-container div:nth-child(6) {
+    grid-row: 5 / 5; 
+    grid-column: 2 / 5;
+    margin-top: -70px;
+    margin-bottom: -100px;
+}
+
+.rounded-button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 70px;
+    border: none;
+    border-radius: 20px; /* Adjust the border-radius for more or less roundness */
+    background-color: #2267fe;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.rounded-button:hover {
+    background-color: #2980b9;
+}
